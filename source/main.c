@@ -45,10 +45,7 @@ int main(){
 
         ya2d_screenFlip();
         
-        if(ya2d_paddata[0].BTN_START) break;
-        if(ya2d_paddata[0].BTN_CROSS) is_pressed = true;
-
-        if (ya2d_paddata[0].BTN_R1 && ya2d_paddata[0].BTN_R2) is_pressed = false;
+        if(ya2d_button_pressed(0,YA2D_BTN_CROSS)) is_pressed = true;
     }
     ya2d_deinit();
 	return 0;
