@@ -47,6 +47,8 @@ int main(){
         
         if(ya2d_paddata[0].BTN_START) break;
         if(ya2d_paddata[0].BTN_CROSS) is_pressed = true;
+
+        if (ya2d_paddata[0].BTN_R1 && ya2d_paddata[0].BTN_R2) is_pressed = false;
     }
     ya2d_deinit();
 	return 0;
