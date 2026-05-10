@@ -12,7 +12,10 @@ void ya2d_controlsRead()
 		}
 	}	
 }
-
+/// @brief 
+/// @param port - controller port(порт контроллера)
+/// @param button - button on the controller(кнопка на контроллере)
+/// @return 
 int ya2d_button_pressed(int port, ya2d_button_t button){
 	if (port < 0) return false;
 	
